@@ -143,7 +143,7 @@ const Tutorials = () => {
             {filteredMachines.map((machine) => (
               <div
                 key={machine._id || Math.random()}
-                className="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 p-6 cursor-pointer"
+                className="bg-white rounded-xl shadow-lg px-5 hover:shadow-xl transform hover:scale-105 transition-all duration-300  cursor-pointer"
               >
                 <h2
                   className="text-xl font-bold text-gray-800 mb-6 pb-3 border-b cursor-pointer hover:text-orange-400"
@@ -200,8 +200,8 @@ const Tutorials = () => {
         ) : (
           <div className="  grid grid-cols-2 gap-10">
             {tutorials.map((tutorial, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 p-6">
-                <h2 className="text-xl font-bold text-gray-800 mb-6">{tutorial.title}</h2>
+              <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ">
+                <h2 className="text-xl font-bold text-gray-800 ">{tutorial.title}</h2>
                 <div className="relative rounded-lg overflow-hidden">
                   <button
                     onClick={() => handleOpenModal(tutorial.url)}
