@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import VerifyToken from "../../utils/VerifyToken";
 import Loader from "../../components/Loader/Loader";
 import TabNav from "../../Shared/TabNav";
@@ -7,7 +7,7 @@ import AuthToken from "../../utils/AuthToken";
 
 const AddedTasks = () => {
   const user = VerifyToken();
-  const createdBy = user?.username; // Ensure this is correct based on your token
+  const createdBy = user?.username; 
   const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(true);
   const token = AuthToken()
